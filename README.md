@@ -18,9 +18,9 @@ Sentence structure changes
 👉 This project solves that using semantic search instead of keyword matching.
 
 📊 Datasets Used 
-1️⃣ Finance Dataset form kaggle
-2️⃣ Programming Dataset from kaggle
-3️⃣ Insurance Dataset from kaggle
+1️⃣ Finance Dataset form kaggle <br>
+2️⃣ Programming Dataset from kaggle <br>
+3️⃣ Insurance Dataset from kaggle <br>
 
 🗄️ SQL Database Usage
 The project uses SQL database to store and manage FAQ data.
@@ -38,6 +38,8 @@ CREATE TABLE faq_data (
     category VARCHAR(100),
     embedding_id INT
 );
+
+<br>
 📥 Sample Data
 INSERT INTO faq_data (question, answer, category)
 VALUES (
@@ -46,7 +48,7 @@ VALUES (
 'AI'
 );
 
-
+```
 ⚙️ System Architecture
 User Query
      ↓
@@ -59,7 +61,7 @@ FAISS Similarity Search
 SQL Database Lookup
      ↓
 Final Answer Returned
-
+```
 
 🔧 Tech Stack
 Python 🐍
@@ -70,6 +72,8 @@ SQL (MySQL)
 Pandas, NumPy
 Streamlit
 
+<br>
+
 🧪 How It Works
 All FAQs are converted into embeddings using BERT
 Embeddings are stored in FAISS index
@@ -77,6 +81,7 @@ User query is converted into embedding
 FAISS finds most similar question
 SQL database stores only un-answered questions
 
+```
 📁 Project Structure
 project/
 │
@@ -98,7 +103,7 @@ project/
 │
 ├── app15.py
 ├── README.md
-
+```
 
 🚀 Installation & Setup
 git clone https://github.com/FAQ
