@@ -3,21 +3,21 @@
 
 This project is an FAQ Retrieval System that returns the most relevant answer for a user query using NLP + Semantic Search + Database integration.
 
-It uses:
-BERT for text embeddings
-FAISS for fast similarity search
-SQL Database for structured FAQ storage and retrieval
-3 different datasets for improved generalization
+It uses: <br>
+BERT for text embeddings <br>
+FAISS for fast similarity search <br>
+SQL Database for structured FAQ storage and retrieval <br>
+3 different datasets for improved generalization <br>
 
 🧠 Problem Statement
-Traditional FAQ systems rely on keyword matching which fails when:
-User uses different wording
-Synonyms are used
-Sentence structure changes
+Traditional FAQ systems rely on keyword matching which fails when: <br>
+User uses different wording <br>
+Synonyms are used <br>
+Sentence structure changes <br>
 
 👉 This project solves that using semantic search instead of keyword matching.
 
-📊 Datasets Used 
+📊 Datasets Used  <br>
 1️⃣ Finance Dataset form kaggle <br>
 2️⃣ Programming Dataset from kaggle <br>
 3️⃣ Insurance Dataset from kaggle <br>
@@ -30,6 +30,7 @@ Structured storage of un-answered questions
 Easy updates & scaling
 Acts as source of truth for FAQs
 
+```
 📂 Database Schema
 CREATE TABLE faq_data (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -38,7 +39,6 @@ CREATE TABLE faq_data (
     category VARCHAR(100),
     embedding_id INT
 );
-
 <br>
 📥 Sample Data
 INSERT INTO faq_data (question, answer, category)
@@ -47,6 +47,8 @@ VALUES (
 'Machine learning is a subset of AI that allows systems to learn from data.',
 'AI'
 );
+```
+<br>
 
 ```
 ⚙️ System Architecture
@@ -74,12 +76,12 @@ Streamlit
 
 <br>
 
-🧪 How It Works
-All FAQs are converted into embeddings using BERT
-Embeddings are stored in FAISS index
-User query is converted into embedding
-FAISS finds most similar question
-SQL database stores only un-answered questions
+🧪 How It Works <br>
+All FAQs are converted into embeddings using BERT <br>
+Embeddings are stored in FAISS index <br>
+User query is converted into embedding <br>
+FAISS finds most similar question <br>
+SQL database stores only un-answered questions <br>
 
 ```
 📁 Project Structure
