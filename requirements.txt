@@ -3,5 +3,3 @@ scikit-learn
 pickle
 joblib
 gensim
-pymysql
-faiss
