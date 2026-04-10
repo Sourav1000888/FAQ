@@ -1,4 +1,5 @@
 📌 FAQ Retrieval System (BERT + FAISS + SQL) <br>
+
 🚀 Project Overview
 
 This project is an FAQ Retrieval System that returns the most relevant answer for a user query using NLP + Semantic Search + Database integration.
@@ -108,7 +109,7 @@ project/
 ```
 
 🚀 Installation & Setup
-git clone https://github.com/FAQ
+git clone https://github.com/Sourav1000888/FAQ
 cd FAQ
 
 🏃 Run Project
