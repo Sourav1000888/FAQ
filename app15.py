@@ -21,11 +21,8 @@ st.set_page_config(
 # load model and dataframes
 @st.cache_resource
 def load_pretrained_model():
-    if os.path.exists('./faq_model'):
-        model = SentenceTransformer('./faq_model')
-        print('model load successfully ')
-    else:
-        print('folder not found')
+    model = SentenceTransformer('./faq_model')
+    print('model load successfully ')
 
     #load fiass database
     finance_database = joblib.load('finance_database.pkl')
