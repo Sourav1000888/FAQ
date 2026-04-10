@@ -1,4 +1,4 @@
-📌 FAQ Retrieval System (BERT + FAISS + SQL)
+📌 FAQ Retrieval System (BERT + FAISS + SQL) <br>
 🚀 Project Overview
 
 This project is an FAQ Retrieval System that returns the most relevant answer for a user query using NLP + Semantic Search + Database integration.
@@ -39,7 +39,7 @@ CREATE TABLE faq_data (
     category VARCHAR(100),
     embedding_id INT
 );
-<br>
+
 📥 Sample Data
 INSERT INTO faq_data (question, answer, category)
 VALUES (
@@ -65,13 +65,13 @@ SQL Database Lookup
 Final Answer Returned
 ```
 
-🔧 Tech Stack
-Python 🐍
-NLP (Transformers)
-BERT embeddings
-FAISS vector search
-SQL (MySQL)
-Pandas, NumPy
+🔧 Tech Stack <br>
+Python 🐍 <br>
+NLP (Transformers) <br>
+BERT embeddings <br>
+FAISS vector search <br>
+SQL (MySQL) <br>
+Pandas, NumPy <br>
 Streamlit
 
 <br>
