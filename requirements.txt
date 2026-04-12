@@ -1,5 +1,7 @@
 streamlit
 scikit-learn
 joblib
+faiss-cpu
 pymysql
-sentence_transformers
+torchvision
+transformers
