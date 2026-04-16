@@ -21,8 +21,7 @@ st.set_page_config(
 # load model and dataframes
 @st.cache_resource
 def load_pretrained_model():
-    model = SentenceTransformer('./faq_model')
-    print('model load successfully ')
+    model = SentenceTransformer('all-MiniLM-L6-v2')
 
     #load fiass database
     finance_database = joblib.load('finance_database.pkl')
