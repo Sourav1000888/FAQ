@@ -34,19 +34,14 @@ Acts as source of truth for FAQs
 ```
 📂 Database Schema
 CREATE TABLE faq_data (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    question TEXT NOT NULL,
-    answer TEXT NOT NULL,
-    category VARCHAR(100),
-    embedding_id INT
+    domain varchar(255),
+    ques varchar(255),
 );
 
 📥 Sample Data
-INSERT INTO faq_data (question, answer, category)
+INSERT INTO faq_data (domain, ques)
 VALUES (
-'What is machine learning?',
-'Machine learning is a subset of AI that allows systems to learn from data.',
-'AI'
+f'{domain}', f'{query}'
 );
 ```
 <br>
@@ -102,7 +97,7 @@ project/
 │   ├── insurance_database.pkl
 │
 ├── models/
-│   ├── 📁faq_model
+│   ├── sentence_transformers(all-MiniLM-L6-v2)
 │
 ├── app15.py
 ├── README.md
