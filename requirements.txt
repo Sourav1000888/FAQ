@@ -1,6 +1,6 @@
-streamlit
+streamli
 scikit-learn
 joblib==1.5.2
 faiss-cpu
 pymysql==1.1.1
-
+sentence_transformers==5.2.0
