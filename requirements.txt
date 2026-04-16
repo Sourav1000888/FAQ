@@ -1,7 +1,6 @@
 streamlit
 scikit-learn
-joblib
+joblib==1.5.2
 faiss-cpu
-pymysql
-torchvision
-transformers
+pymysql==1.1.1
+
