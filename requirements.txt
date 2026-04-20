@@ -1,0 +1,8 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.9.1
+streamlit==1.37.1
+sentence-transformers==5.2.0
+pymysql==1.1.1
+pandas==2.3.3
+faiss-cpu==1.13.2
+scikit-learn==1.8.0
