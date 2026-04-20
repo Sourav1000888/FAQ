@@ -1,5 +1,0 @@
-streamlit==1.37.1
-joblib==1.5.2
-faiss-cpu==1.7.4
-pymysql==1.1.1
-sentence-transformers==2.2.2
