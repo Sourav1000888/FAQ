@@ -11,13 +11,13 @@ WORKDIR $HOME/app
 
 # --- STAGE 2: Backend Dependencies ---
 # Backend folder se requirements copy karein aur install karein
-COPY --chown=user backend/requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+COPY --chown=user backend/requirements.txt ./requirements_backend.txt
+RUN pip install --no-cache-dir -r requirements_backend.txt
 
 # --- STAGE 3: Frontend Dependencies ---
 # Frontend folder se requirements copy karein aur install karein
-COPY --chown=user fronted/requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+COPY --chown=user fronted/requirements.txt ./requirements_fronted.txt
+RUN pip install --no-cache-dir -r requirements_fronted.txt
 
 # --- STAGE 4: Copy All Code ---
 # Pura frontend aur backend ka code container mein copy karein

@@ -1,5 +1,5 @@
-cd backend && uvicorn backend:app --host 0.0.0.0 --port 8000  &
+uvicorn backend.backend:app --host 0.0.0.0 --port 8000  &
 
 sleep(5)
 
-cd fronted && streamlit run app.py --server.port 7860 --server.address 0.0.0.0
+streamlit run fronted/app.py --server.port 7860 --server.address 0.0.0.0
