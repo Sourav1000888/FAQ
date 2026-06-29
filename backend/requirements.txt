@@ -1,0 +1,11 @@
+
+fastapi==0.128.0
+sqlalchemy==2.0.34
+sentence-transformers==5.2.0
+joblib==1.5.2
+psycopg2-binary
+uvicorn
+dotenv
+os
+re
+contextlib
