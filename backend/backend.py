@@ -9,8 +9,6 @@ from dotenv import load_dotenv
 import os, re
 from sentence_transformers import SentenceTransformer
 import joblib
-import warnings
-warnings.filterwarnings('ignore', category=FutureWarning)
 
 load_dotenv()
 

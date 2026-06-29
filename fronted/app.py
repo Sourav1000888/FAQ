@@ -4,7 +4,6 @@ import requests, os
 from dotenv import load_dotenv
 from typing import Optional
 from pydantic import BaseModel
-from streamlit_extras.stylable_container import stylable_container
 
 # Frequency ask questions
 
